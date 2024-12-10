@@ -1,0 +1,211 @@
+/* General Style Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #34495e; /* Deep Blue-Grey */
+    --accent-color: #ff8c00; /* Vivid Amber */
+    --bg-gradient: linear-gradient(135deg, #fc466b, #3f5efb); /* Vibrant Gradient */
+    --text-dark: #2c3e50; /* Dark Text */
+    --text-muted: #95a5a6; /* Muted Gray */
+    --light-gray: #f4f6f7; /* Soft Gray Background */
+}
+
+/* Smooth Transition */
+body, .btn, .card, .icon-container i {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar */
+.navbar {
+    background-image: var(--bg-gradient);
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.nav-link:hover {
+    color: #ffd700 !important;
+}
+
+/* Home Section */
+.home {
+    padding: 100px 0;
+    text-align: center;
+    background: var(--bg-gradient);
+    color: #ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.profile-img {
+    width: 150px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s;
+}
+.profile-img:hover {
+    transform: scale(1.1);
+}
+.home h1 {
+    font-size: 3rem;
+    margin-top: 20px;
+}
+.home p {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+.home .btn {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: background 0.4s ease, transform 0.3s;
+}
+.home .btn:hover {
+    background-color: #ff9f43;
+    transform: translateY(-3px);
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    text-align: center;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+}
+section h2:after {
+    content: '';
+    width: 70px;
+    height: 4px;
+    background-color: var(--accent-color);
+    display: block;
+    margin: 12px auto;
+    border-radius: 2px;
+}
+
+/* About Section */
+#about {
+    background-color: var(--light-gray);
+    color: var(--text-dark);
+    padding: 70px 0;
+}
+#about p {
+    max-width: 800px;
+    margin: auto;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+    background-image: var(--bg-gradient);
+    color: #ffffff;
+    padding: 70px 0;
+}
+.icon-container i {
+    font-size: 3rem;
+    margin: 0 25px;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: var(--accent-color);
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.icon-container i:hover {
+    transform: scale(1.2);
+    background-color: #ff9f43;
+}
+
+/* Projects Section */
+#projects {
+    background-color: var(--light-gray);
+    padding: 70px 0;
+}
+#projects .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#projects .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+#projects .btn-primary {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s;
+    border-radius: 30px;
+}
+#projects .btn-primary:hover {
+    background-color: #ff9f43;
+    transform: translateY(-3px);
+}
+
+/* Contact Section */
+#contact {
+    background-image: var(--bg-gradient);
+    color: #ffffff;
+    padding: 70px 0;
+}
+.contact-form label {
+    color: #ffffff;
+    font-weight: 500;
+}
+.contact-form .form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+.contact-form .btn-primary {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+}
+.contact-form .btn-primary:hover {
+    background-color: #ff9f43;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+}
+footer p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #dcdde1;
+}
+footer .social-links a {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s;
+}
+footer .social-links a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
